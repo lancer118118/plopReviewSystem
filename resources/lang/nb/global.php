@@ -462,6 +462,7 @@ return [
     'Photos' => 'Bilder',
     'Images' => 'Bilder',
     'Preview' => 'Forpremiere',
+    'reviews' => 'Anmeldelser',
     'Done' => 'Done',
     'The pictures have been added' => 'Bildene er lagt til',
     'The pictures have been updated' => 'Bildene er oppdatert',

@@ -544,6 +544,7 @@ return [
     'Photos' => 'Photos',
     'Images' => 'Images',
     'Preview' => 'Preview',
+    'reviews' => 'Reviews',
     'Done' => 'Done',
 	'The pictures have been added' => 'The pictures have been added',
     'The pictures have been updated' => 'The pictures have been updated',

@@ -153,14 +153,14 @@
 								</li>
 								<li class="nav-item" role="presentation">
 									<button class="nav-link"
-										id="item-review-tab"
+										id="item-reviews-tab"
 										data-bs-toggle="tab"
 										data-bs-target="#item-reviews"
 										role="tab"
 										aria-controls="item-reviews"
 										aria-selected="false"
 									>
-										<h4>{{ trans('reviews::messages.Reviews') }}</h4>
+										<h4>{{ t('reviews') }}</h4>
 									</button>
 								</li>
 								@if (config('plugins.reviews.installed'))
@@ -311,7 +311,13 @@
 										
 									</div>
 								</div>
-								
+								<div class="tab-pane" id="item-reviews" role="tabpanel" aria-labelledby="item-reviews-tab">
+									<div class="row pb-3">
+										<div class="items-reviews-info col-md-12 col-sm-12 col-12 enable-long-words from-wysiwyg">
+											This is reviews tab test
+										</div>
+									</div>
+								</div>
 								@if (config('plugins.reviews.installed'))
 									@if (view()->exists('reviews::comments'))
 										@include('reviews::comments')
