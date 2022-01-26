@@ -137,7 +137,6 @@
 							@endif
 						@endif
 						
-
 						<div class="items-details">
 							<ul class="nav nav-tabs" id="itemsDetailsTabs" role="tablist">
 								<li class="nav-item" role="presentation">
@@ -150,6 +149,18 @@
 									   aria-selected="true"
 									>
 										<h4>{{ t('listing_details') }}</h4>
+									</button>
+								</li>
+								<li class="nav-item" role="presentation">
+									<button class="nav-link"
+										id="item-review-tab"
+										data-bs-toggle="tab"
+										data-bs-target="#item-reviews"
+										role="tab"
+										aria-controls="item-reviews"
+										aria-selected="false"
+									>
+										<h4>{{ trans('reviews::messages.Reviews') }}</h4>
 									</button>
 								</li>
 								@if (config('plugins.reviews.installed'))
